@@ -1,0 +1,72 @@
+{
+    "name": "albursa/cashier",
+    "description": "Albursa Cashier provides an expressive, fluent interface to Kuveyt Türk's subscription billing services.",
+    "keywords": [
+        "laravel",
+        "subscriptions",
+        "recurring",
+        "billing",
+        "cashier",
+        "credit card",
+        "debit card",
+        "Europe"
+    ],
+    "homepage": "https://github.com/albursa/cashier",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Albursa.com",
+            "email": "support@albursa.com",
+            "homepage": "https://www.albursa.com",
+            "role": "Owner"
+        },
+        {
+            "name": "Sander van Hooft",
+            "email": "info@sandervanhooft.com",
+            "homepage": "https://www.sandervanhooft.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*",
+        "ext-intl": "*",
+        "dompdf/dompdf": "^0.8.0",
+        "illuminate/database": "^6.0|^7.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "moneyphp/money": "^3.2",
+        "nesbot/carbon": "^2.0"
+    },
+    "require-dev": {
+        "laravel/legacy-factories": "^1.0",
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.3|^9.0",
+        "vlucas/phpdotenv": "^3.3|^4.0|^5.0"
+    },
+    "autoload": {
+        "files": [
+            "src/Helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Albursa\\Cashier\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Albursa\\Cashier\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Albursa\\Cashier\\CashierServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
