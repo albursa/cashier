@@ -19,12 +19,6 @@
             "email": "support@albursa.com",
             "homepage": "https://www.albursa.com",
             "role": "Owner"
-        },
-        {
-            "name": "Sander van Hooft",
-            "email": "info@sandervanhooft.com",
-            "homepage": "https://www.sandervanhooft.com",
-            "role": "Developer"
         }
     ],
     "require": {
